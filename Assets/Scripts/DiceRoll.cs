@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class DiceRoll : MonoBehaviour
 {
-    private Rigidbody body;
+    Rigidbody body;
 
     [SerializeField] private float maxRandomForceValue = 3000f;
     [SerializeField] private float startRollingForce = 1000f;
@@ -45,6 +45,6 @@ public class DiceRoll : MonoBehaviour
     {
         body = GetComponent<Rigidbody>();
         body.isKinematic = true;
-        transform.rotation = Random.rotation; // Random rotation
+        transform.rotation = new Quaternion(Random.Range(0,360), Random.Range(0, 360), Random.Range(0,360),0);
     }
 }
