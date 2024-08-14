@@ -70,3 +70,9 @@ crashlytics-build.properties
 com.ptc.vuforia.engine-10.25.4.tgz
 
 .vsconfig
+
+Assembly-CSharp-Editor.csproj
+
+AugReal-project.sln
+
+Assembly-CSharp.csproj

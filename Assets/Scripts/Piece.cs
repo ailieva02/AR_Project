@@ -45,7 +45,7 @@ public class DraggablePiece : MonoBehaviour
 
     void OnMouseUp()
     {
-        // Stop dragging
+        
         isDragging = false;
     }
 
